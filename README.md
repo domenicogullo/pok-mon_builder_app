@@ -1,70 +1,54 @@
-# Getting Started with Create React App
+# README file per l'app Pokémon
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Introduzione al progetto 
 
-## Available Scripts
+Il progetto realizzato consiste in un'applicazione che guida l'utente, attraverso l'approccio dei wizard, nella creazione di una squadra di Pokémon. 
 
-In the project directory, you can run:
+## Stack tecnologico utilizzato
 
-### `npm start`
+-React
+-react-step-wizard
+-Material-UI
+-Javascript
+-HTML / CSS
+-React Hooks
+-Node.js & npm (Node Package Manager)
+-Axios
+-API Pokémon
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Struttura del progetto
+La struttura presenta 3 step principali che guidano l'utente attraverso tutto il processo:
 
-### `npm test`
+Step 1 - Inserimento dei dati dell'utente relativi al Trainer name, Team name e tipo di pokemon preferito.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Step 2 - Composizione del team dell'utente con selezione di un numero di pokemon compreso tra 1 e 7.
 
-### `npm run build`
+Step 3 -  Generazione casuale del team avversario composto da 4 pokemon che non rientrano tra quelli scelti dall'utente allo step precedente.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+L'ultimo step rappresenta un riepilogo di tutte le scelte effettuate dall'utente e presenta la possibilità di confermarle o modificarle.  
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Per gestire la navigazione tra i diversi step del wizard è stato utilizzato il pacchetto 'react-step-wizard' in modo da semplificare l'intero processo attraverso un'interfaccia user-friendly che consente all'utente di spostarsi tra i vari step attraverso i pulsanti implementati riducendo così al minimo la probabilità di errori.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Per la gestione del layout e dello stile dell'applicazione ho deciso di utilizzare la libreria Material-UI (MUI) che fornisce una serie di componenti stilizzati e pronti all'uso, oltre a fornire
+anche la possibilità di personalizzazione di questi componenti attraverso il sistema di theming applicato per la rappresentazione della barra di navigazione presente nel sommario conclusivo.
 
-### `npm run eject`
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+----------------------------------------------------------------------------------
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## Prerequisiti
+-Node.js 
+-npm
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+## Procedimento di avvio
+1 - Dopo aver clonato la repository da git attraverso il comando git clone url_repository, 
+spostarsi nella directory del progetto appena clonata tramite il comando cd nome_directory
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+2 - Installare le varie dipendenze necessarie per il corretto avvio dell'applicazione attraverso il comando npm install che andrà ad installare tutte le librerie e pacchetti necessari 
+(react-step-wizard, @mui/material, @emotion/react, @emotion/styled, Axios)
 
-## Learn More
+3 - Avviare l'applicazione attraverso il comando npm start che procederà all'apertura sul browser predefinito dal sistema in utilizzo. 
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
-To learn React, check out the [React documentation](https://reactjs.org/).
 
-### Code Splitting
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
