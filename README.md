@@ -6,15 +6,15 @@ Il progetto realizzato consiste in un'applicazione che guida l'utente, attravers
 
 ## Stack tecnologico utilizzato
 
--React
--react-step-wizard
--Material-UI
--Javascript
--HTML / CSS
--React Hooks
--Node.js & npm (Node Package Manager)
--Axios
--API Pokémon
+1 - React, 
+2 - react-step-wizard,
+3 - Material-UI,
+4 - Javascript,
+5 - HTML / CSS,
+6 - React Hooks,
+7 - Node.js & npm (Node Package Manager),
+8 - Axios,
+9 - API Pokémon
 
 
 ## Struttura del progetto
